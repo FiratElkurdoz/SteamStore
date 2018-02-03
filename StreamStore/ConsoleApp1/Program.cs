@@ -21,7 +21,7 @@ namespace ConsoleApp1
             //input loop
             while (true)
             {
-                Console.WriteLine("Insert command (print/add/buy)");
+                Console.WriteLine("Insert command (print/add/buy/quit)");
                 string command = Console.ReadLine();
                 switch (command)
                 {
@@ -48,6 +48,10 @@ namespace ConsoleApp1
                             store.SellGame(index);
                         else
                             Console.WriteLine("Error: invalid index");
+                        break;
+
+                    case "quit":
+                        Environment.Exit(0);
                         break;
 
                     default:
