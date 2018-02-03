@@ -43,7 +43,13 @@ public class Showcase
         Console.WriteLine("Games on showcase:");
         for (int i = 0; i<games.Length; i++)
         {
-            Console.WriteLine(i + ": " + games[i].name + "; " + games[i].price);
+            if (games[i] != null)
+                Console.WriteLine(i + ": " + games[i].name + "; " + games[i].price);
         }
+    }
+
+    public int NumberOfSpots()
+    {
+        return games.Length;
     }
 }

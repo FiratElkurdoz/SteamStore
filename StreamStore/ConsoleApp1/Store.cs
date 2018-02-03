@@ -2,7 +2,7 @@
 
 public class Store
 {
-    Showcase showcase;
+    public Showcase showcase;
 
 	public Store()
 	{
